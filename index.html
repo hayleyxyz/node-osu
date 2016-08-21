@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>node-osu</title>
+
+      <style type="text/css">
+          body {
+              margin: 0;
+              overflow: hidden;
+              background-image: url('./songs/332532 Panda Eyes & Teminite - Highscore/BG.png');
+              background-image: url('./songs/203309 Ni-Sokkususu - Shukusai no Elementalia/claire2.png');
+            background-image: url('./songs/292301 xi - Blue Zenith/bg crop.jpg');
+              background-size: cover;
+              background-position: center;
+          }
+
+          #fade {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 1);
+            opacity: 0.8;
+            animation-duration: 3s;
+            animation-name: fade;
+          }
+
+          @keyframes fade {
+            from {
+              opacity: 0;
+            }
+
+            to {
+              opacity: 0.8;
+            }
+          }
+        
+        canvas {
+          position: relative;
+        }
+      </style>
+  </head>
+  <body>
+      <div id="fade"></div>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
